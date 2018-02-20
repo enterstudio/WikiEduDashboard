@@ -56,7 +56,7 @@
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.6",
-    "gulp-watch": "^4.3.11",
+    "gulp-watch": "^5.0.0",
     "gulp-webserver": "^0.9.1",
     "handleify": "^0.1.2",
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc14.tar.gz",
