@@ -13,7 +13,7 @@
     "bower": "^1.8.0",
     "chai": "^3.5.0",
     "cjsx-loader": "^2.1.0",
-    "coffee-coverage": "^1.0.1",
+    "coffee-coverage": "^2.0.0",
     "coffee-lint-loader": "0.0.1",
     "coffee-loader": "^0.7.2",
     "coffee-react": "^4.0.0",
@@ -69,7 +69,7 @@
     "json-loader": "^0.5.4",
     "jsx-require-extension": "^0.2.0",
     "location-origin": "^1.1.4",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.5",
     "lodash.map": "^4.6.0",
     "lodash.reject": "^4.6.0",
     "lodash.sorteduniqby": "^4.7.0",
@@ -127,16 +127,20 @@
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
     "webpack-manifest-plugin": "^1.1.0",
-    "wnumb": "^1.0.4"
+    "wnumb": "^1.0.4",
+    "snyk": "^1.88.0"
   },
   "scripts": {
     "test": "gulp js_coverage",
     "start": "gulp dev",
     "hot": "gulp hot-dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "copy-to-clipboard": "^3.0.5",
     "react-copy-to-clipboard": "^4.1.0"
-  }
+  },
+  "snyk": true
 }
