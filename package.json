@@ -25,7 +25,7 @@
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.2.3",
     "event-stream": "^3.3.4",
-    "gulp": "^3.8.7",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "3.1.1",
     "gulp-cached": "^1.1.1",
     "gulp-clean": "^0.3.0",
@@ -37,11 +37,11 @@
     "gulp-css-flipper": "^1.0.2",
     "gulp-csslint": "^1.0.0",
     "gulp-eslint": "^2.1.0",
-    "gulp-htmlhint": "0.3.1",
+    "gulp-htmlhint": "2.2.1",
     "gulp-iconfont": "^8.0.1",
     "gulp-imagemin": "^3.1.1",
     "gulp-jshint": "^2.0.4",
-    "gulp-jsx-coverage": "0.3.8",
+    "gulp-jsx-coverage": "0.4.0",
     "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.4.0",
     "gulp-minify-css": "^1.2.4",
@@ -51,7 +51,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-rev": "^7.1.2",
     "gulp-shell": "^0.5.2",
-    "gulp-sketch": "1.0.3",
+    "gulp-sketch": "1.0.4",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^2.0.0",
@@ -127,16 +127,20 @@
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
     "webpack-manifest-plugin": "^1.1.0",
-    "wnumb": "^1.0.4"
+    "wnumb": "^1.0.4",
+    "snyk": "^1.104.2"
   },
   "scripts": {
     "test": "gulp js_coverage",
     "start": "gulp dev",
     "hot": "gulp hot-dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "copy-to-clipboard": "^3.0.5",
     "react-copy-to-clipboard": "^4.1.0"
-  }
+  },
+  "snyk": true
 }
