@@ -1,0 +1,33 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - gulp-livereload > mini-lr > body-parser > debug:
+        patched: '2023-06-25T18:43:28.964Z'
+        id: 'npm:debug:20170905'
+        path: gulp-livereload > mini-lr > body-parser > debug
+  'npm:minimatch:20160620':
+    - coffee-lint-loader > coffeelint > glob > minimatch:
+        patched: '2023-06-25T18:43:28.964Z'
+        id: 'npm:minimatch:20160620'
+        path: coffee-lint-loader > coffeelint > glob > minimatch
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2023-06-25T18:43:28.964Z'
+        id: 'npm:minimatch:20160620'
+        path: gulp > vinyl-fs > glob-stream > minimatch
+    - gulp-jsx-coverage > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2023-06-25T18:43:28.964Z'
+        id: 'npm:minimatch:20160620'
+        path: gulp-jsx-coverage > gulp > vinyl-fs > glob-stream > minimatch
+  'npm:ms:20170412':
+    - gulp-livereload > mini-lr > body-parser > debug > ms:
+        patched: '2023-06-25T18:43:28.964Z'
+        id: 'npm:ms:20170412'
+        path: gulp-livereload > mini-lr > body-parser > debug > ms
+  'npm:uglify-js:20151024':
+    - handleify > handlebars > uglify-js:
+        patched: '2023-06-25T18:43:28.964Z'
+        id: 'npm:uglify-js:20151024'
+        path: handleify > handlebars > uglify-js
